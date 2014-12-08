@@ -1,0 +1,12 @@
+<section>
+	<div class="title-center">
+		<h2 class="center">GoMad's<br>Playground</h2>
+	</div>
+	<div class="games-rotate">
+		<span ng-repeat="game in games" ng-show="game.show" class="fade-image">
+			<span class="rotate" ng-style="rotateStyle">				
+				<a target="_blank" href="{{::game.url}}"><img ng-style="rotateStyle" ng-src="{{::game.img}}"></a>
+			</span>
+		</span>
+	</div>
+</section>
