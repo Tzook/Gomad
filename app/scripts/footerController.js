@@ -24,6 +24,7 @@
 					 + ' & <a target="_blank" href="https://www.linkedin.com/pub/noam-elboim/a6/372/a">Noam</a><br>'
 					 + '<a target="_blank" href="mailto:tzook10@gmail.com">tzook10@gmail.com</a><br>'
 					 + '<a target="_blank" href="mailto:noam@mail.com">noam@mail.com</a><br>'
-					 + '<a target="_blank" href="">Source</a></p>';
+					 + '<a target="_blank" href="https://github.com/Tzook/Gomad">Source</a><br>'
+					 + 'Music by:<br><a target="_blank" href="mailto:guyguyguy65@gmail.com">Guy Benami</a></p>;
 	}]);
 })(angular);
