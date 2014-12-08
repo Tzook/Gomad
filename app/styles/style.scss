@@ -1,0 +1,150 @@
+@import "bootstrap/_bootstrap.scss";
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+li {
+	list-style: none;
+}
+.main-cnt {
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: fixed;
+	background-image: url("../images/bg3.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.title-center {
+	position: absolute;
+	top: 43%;
+	width: 100%;
+	h2 {
+		font-weight: bold;
+		color: white;
+	}
+}
+.center {
+	height: 0;
+	margin: auto;
+	text-align: center;
+}
+.games-rotate {
+	position: absolute;
+	top: 49%;
+	width: 100%;
+}
+.rotate {
+	position: absolute;
+	display: block;
+	top: 0; 
+	left: 0;
+	bottom: 0;
+	right: 0;
+	height: 0;
+	width: 300px;
+	margin: auto;
+	/* time will be overwritten by angular */
+	-webkit-animation: orbit 12s linear infinite;
+	-moz-animation: orbit 12s linear infinite;
+	-o-animation: orbit 12s linear infinite;
+	animation: orbit 12s linear infinite;
+	img {
+		-webkit-animation: rev-orbit 12s linear infinite;
+		-moz-animation: rev-orbit 12s linear infinite;
+		-o-animation: rev-orbit 12s linear infinite;
+		animation: rev-orbit 12s linear infinite;
+	} 
+}
+
+
+@-webkit-keyframes orbit {
+    from { -webkit-transform: rotate(0deg);}
+    to   { -webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes orbit {
+    from { -moz-transform: rotate(0deg);}
+    to   { -moz-transform: rotate(360deg);}
+}
+@-o-keyframes orbit {
+    from { -o-transform: rotate(0deg);}
+    to   { -o-transform: rotate(360deg);}
+}
+@keyframes orbit {
+    from { transform: rotate(0deg);}
+    to   { transform: rotate(360deg);}
+}
+@-webkit-keyframes rev-orbit {
+    from { -webkit-transform: rotate(0deg);}
+    to   { -webkit-transform: rotate(-360deg);}
+}
+@-moz-keyframes rev-orbit {
+    from { -moz-transform: rotate(0deg);}
+    to   { -moz-transform: rotate(-360deg);}
+}
+@-o-keyframes rev-orbit {
+    from { -o-transform: rotate(0deg);}
+    to   { -o-transform: rotate(-360deg);}
+}
+@keyframes rev-orbit {
+    from { transform: rotate(0deg);}
+    to   { transform: rotate(-360deg);}
+}
+
+.fade-image {
+    transition: 0.5s linear opacity;
+    opacity: 1;
+    &.ng-hide-remove {
+    	opacity: 0;
+    }
+}
+.bottom {
+	position: absolute;
+	width: 100%;
+	bottom: 10px;
+	.footer {
+		width: 200px;
+		background: #B0B0B0;
+		opacity: .8;
+		border-radius: 35px;
+		display: block;
+		margin: auto;
+		padding: 20px 0;
+	  	text-align: center;
+	  	border: 1px solid;
+	  	border-color: #C7C7C7 #C7C7C7 #C7C7C7; 
+		li {
+			color: #EBE302;
+			display: inline;
+			padding: 0 5px;
+			a {
+				text-decoration: none;
+				color: #EBE302;
+				letter-spacing: -0.3px;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+		.audio {
+			position: relative;
+			padding: 0;
+			margin: auto 0 auto 5px;
+			cursor: pointer;
+			.pause {
+				position: absolute;
+				left: 6px;
+				top: 1px;
+				color: red;
+				font-weight: bold;
+			}
+			&.pause {
+				opacity: .7;
+			}
+		}
+	}	
+}
+
