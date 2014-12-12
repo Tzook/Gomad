@@ -1,5 +1,6 @@
 Gomad
 =====
 
-Website application devoted to a friend
+Website application written in AngularJS devoted to a friend
 www.GomadTeam.com
+
