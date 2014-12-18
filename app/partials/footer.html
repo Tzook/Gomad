@@ -1,17 +1,19 @@
 <section>
-	<ul class="footer">
-		<li>
-			<a target="_blank" href="https://www.facebook.com/gomadteam?fref=ts"><img src="/images/fac-ico.png" alt="facebook"></a>
-		</li>
-		<li>
-			<a target="_blank" href="mailto:benk0913@gmail.com"><img src="/images/mail.png" alt="email"></a>
-		</li>
-		<li class="audio" ng-click="toggleAudio()" ng-class="{'pause':audio.muted}">
-			<img src="/images/audio.png" alt="audio">
-			<span ng-show="audio.muted" class="pause">X</span>
-		</li>
-		<li>
-			<a href="" tooltip-html-unsafe="{{::about}}" tooltip-trigger="click">About</a>
-		</li>
-	</ul>
+	<div class="bottom">
+		<ul class="footer">
+			<li>
+				<a target="_blank" href="https://www.facebook.com/gomadteam?fref=ts"><img src="/images/fac-ico.png" alt="facebook"></a>
+			</li>
+			<li>
+				<a target="_blank" href="mailto:benk0913@gmail.com"><img src="/images/mail.png" alt="email"></a>
+			</li>
+			<li class="audio" ng-click="toggleAudio()" ng-class="{'pause':audio.paused}">
+				<img src="/images/audio.png" alt="audio">
+				<span ng-show="audio.paused" class="pause">X</span>
+			</li>
+			<li>
+				<a href="" tooltip-html-unsafe="{{::about}}" tooltip-trigger="click">About</a>
+			</li>
+		</ul>
+	</div>
 </section>
