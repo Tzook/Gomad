@@ -8,16 +8,6 @@
 	'use strict';
 	angular.module('footerController', [])
 	.controller('FooterController', ['$scope', function($scope) {
-		
-		$scope.audio = new Audio('audio/hava.mp3');
-		$scope.audio.loop = true;	// play in loops
-		$scope.audio.play(); 		// play automatically
-
-		/* mutes or un-mutes the audio */
-		$scope.toggleAudio = function() {
-			$scope.audio.muted = !$scope.audio.muted;
-		};
-
 		/* info about the developers */
 		$scope.about = '<p>Created by:<br>'
 					 + '<a target="_blank" href="https://www.linkedin.com/pub/tzook-shaked/a4/230/6a0">Tzook</a>'
