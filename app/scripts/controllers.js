@@ -7,6 +7,7 @@
   var controllers = angular.module('controllers',
    ['ngAnimate',
     'ui.bootstrap',
+    'audioController',
     'footerController',
     'mainController' 
   ]);
