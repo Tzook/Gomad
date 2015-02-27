@@ -1,0 +1,19 @@
+<section class="main-cnt bg" ng-click="phoneStartPlaying()">
+	
+	<div class="bg bg-lights"></div>
+	<div class="bg bg-lights rotate-right"></div>
+	<div class="bg bg-lights rotate-left"></div>
+	<div class="bg-dark-circle bg"></div>
+
+	<h2 class="v-center h-center">GoMad's<br>Playground</h2>
+
+	<div class="games-box h-center v-center">
+		<div class="rotate" ng-style="rotateStyle">			
+			<div class="game" ng-repeat="game in games" style="left:{{::game.x}};bottom:{{::game.y}};">
+				<a target="_blank" href="{{::game.url}}" ng-style="rotateStyle">
+					<img ng-src="{{::'images/' + game.img}}" ng-show="game.show" class="fade-image">
+				</a>
+			</div>
+		</div>
+	</div>
+</section>
