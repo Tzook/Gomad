@@ -745,6 +745,7 @@ h2 {
 
 .v-center {
   top: 50%;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%); }
 
 .h-center {
@@ -782,6 +783,7 @@ h2 {
   .rotate img {
     border-radius: 25px; }
     .rotate img:hover {
+      -webkit-transform: scale(1.2);
       transform: scale(1.2); }
 
 @-webkit-keyframes orbit {
@@ -813,6 +815,7 @@ h2 {
     transform: rotate(-360deg); } }
 
 .fade-image {
+  -webkit-transition: .3s linear all;
   transition: .3s linear all;
   opacity: 1; }
   .fade-image.ng-hide-remove {

@@ -54,7 +54,8 @@ h2 {
 }
 .v-center {
 	top: 50%;
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+			transform: translateY(-50%);
 }
 .h-center {
 	margin: auto;
@@ -94,7 +95,8 @@ h2 {
 	img {
 		border-radius: 25px;
 		&:hover {
-			transform: scale(1.2);
+			-webkit-transform: scale(1.2);
+					transform: scale(1.2);
 		}
 	}
 }
@@ -115,7 +117,8 @@ h2 {
     to   { transform: rotate(-360deg);}
 }
 .fade-image {
-    transition: .3s linear all;
+    -webkit-transition: .3s linear all;
+    		transition: .3s linear all;
     opacity: 1;
     &.ng-hide-remove {
     	opacity: 0;
