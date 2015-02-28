@@ -759,16 +759,18 @@ h2 {
 
 .rotate {
   /* time will be overwritten by angular */
+  position: absolute;
+  border-radius: 150px;
   width: 100%;
   height: 100%;
   -webkit-animation: orbit 14s linear infinite;
   animation: orbit 14s linear infinite; }
-  .rotate:hover {
-    -webkit-animation-play-state: paused !important;
-    animation-play-state: paused !important; }
-    .rotate:hover a {
-      -webkit-animation-play-state: paused !important;
-      animation-play-state: paused !important; }
+  .big .rotate:hover {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused; }
+    .big .rotate:hover a {
+      -webkit-animation-play-state: paused;
+      animation-play-state: paused; }
   .rotate a {
     display: block;
     -webkit-animation: rev-orbit 14s linear infinite;

@@ -70,16 +70,18 @@ h2 {
 }
 .rotate {
 	/* time will be overwritten by angular */
+	position: absolute;
+	border-radius: $circle-radius / 2;
 	width: 100%;
 	height: 100%;
 	-webkit-animation: orbit $circle-time linear infinite;
 	animation: orbit $circle-time linear infinite;
-	&:hover {
-		-webkit-animation-play-state: paused !important; 
-    			animation-play-state: paused !important; 
+	.big &:hover {
+		-webkit-animation-play-state: paused; 
+    			animation-play-state: paused; 
 		a {
-			-webkit-animation-play-state: paused !important;
-   					animation-play-state: paused !important; 
+			-webkit-animation-play-state: paused;
+   					animation-play-state: paused; 
 		}
 	}
 	a {

@@ -7,11 +7,17 @@
 (function(angular){
 	'use strict';
 	angular.module('audioController', [])
-	.controller('AudioController', ['$scope', function($scope) {
+	.controller('AudioController', ['$scope', '$window', function($scope, $window) {
 		$scope.phonePlay = false;
+		$scope.isBig = false;
 		$scope.audio = new Audio('audio/hava.mp3');
 		$scope.audio.loop = true;	// play in loops
-		//$scope.audio.play(); 		// play automatically
+		$scope.audio.play(); 		// play automatically
+
+		/* decides if it is a computer or not */
+		$window.onload = function(){
+			$scope.isBig = ($window.innerWidth > 850);
+		};
 
 		/* mutes or un-mutes the audio */
 		$scope.toggleAudio = function() {

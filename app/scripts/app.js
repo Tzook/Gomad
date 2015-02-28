@@ -3,14 +3,14 @@
 ** Includes the directives and the config.
 *===========================================================================*/
 (function(angular){
+	'use strict';
 	console.log("	╭━━╮╭━━━┳━━━┳━━━╮");
 	console.log("	┃╭╮┃┃╭━╮┃╭━╮┃╭━╮┃");
 	console.log("	┃╰╯╰┫┃┃┃┃╰━━┫╰━━╮");
 	console.log("	┃╭━╮┃┃┃┃┣━━╮┣━━╮┃");
 	console.log("	┃╰━╯┃╰━╯┃╰━╯┃╰━╯┃");
 	console.log("	╰━━━┻━━━┻━━━┻━━━╯");
-
-	'use strict';
+	
 	var myApp = angular.module('myApp', [
 		'ngRoute',
 		'controllers'
