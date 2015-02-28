@@ -726,14 +726,10 @@ body {
 
 .rotate-right {
   -webkit-animation: orbit 65s linear infinite;
-  -moz-animation: orbit 65s linear infinite;
-  -o-animation: orbit 65s linear infinite;
   animation: orbit 65s linear infinite; }
 
 .rotate-left {
   -webkit-animation: rev-orbit 30s linear infinite;
-  -moz-animation: rev-orbit 30s linear infinite;
-  -o-animation: rev-orbit 30s linear infinite;
   animation: rev-orbit 30s linear infinite; }
 
 h2 {
@@ -763,11 +759,10 @@ h2 {
 
 .rotate {
   /* time will be overwritten by angular */
-  display: block;
   width: 100%;
   height: 100%;
-  -webkit-animation: orbit linear infinite;
-  animation: orbit linear infinite; }
+  -webkit-animation: orbit 14s linear infinite;
+  animation: orbit 14s linear infinite; }
   .rotate:hover {
     -webkit-animation-play-state: paused !important;
     animation-play-state: paused !important; }
@@ -776,11 +771,11 @@ h2 {
       animation-play-state: paused !important; }
   .rotate a {
     display: block;
+    -webkit-animation: rev-orbit 14s linear infinite;
+    animation: rev-orbit 14s linear infinite; }
+  .rotate img {
     width: 50px;
     height: 50px;
-    -webkit-animation: rev-orbit linear infinite;
-    animation: rev-orbit linear infinite; }
-  .rotate img {
     border-radius: 25px; }
     .rotate img:hover {
       -webkit-transform: scale(1.2);
@@ -829,30 +824,32 @@ li {
   position: absolute;
   width: 100%;
   bottom: 10px; }
-  .bottom .footer {
-    width: 200px;
-    opacity: .8;
-    border-radius: 35px;
-    display: block;
-    margin: auto;
-    padding: 20px 0;
-    text-align: center; }
-    .bottom .footer li {
-      position: relative;
-      display: inline;
-      padding: 0 5px; }
-      .bottom .footer li a {
-        text-decoration: none;
-        color: cyan;
-        letter-spacing: -0.3px; }
-    .bottom .footer .audio {
-      cursor: pointer; }
-      .bottom .footer .audio .pause {
-        font-size: 20px;
-        position: absolute;
-        left: 11px;
-        top: -4px;
-        color: red;
-        font-weight: bold; }
-      .bottom .footer .audio.pause {
-        opacity: .5; }
+
+.footer {
+  width: 200px;
+  opacity: .8;
+  border-radius: 35px;
+  display: block;
+  margin: auto;
+  padding: 20px 0;
+  text-align: center; }
+  .footer li {
+    position: relative;
+    display: inline;
+    padding: 0 5px; }
+    .footer li a {
+      text-decoration: none;
+      color: cyan;
+      letter-spacing: -0.3px; }
+
+.audio {
+  cursor: pointer; }
+  .audio .pause {
+    font-size: 20px;
+    position: absolute;
+    left: 11px;
+    top: -4px;
+    color: red;
+    font-weight: bold; }
+  .audio.pause {
+    opacity: .5; }

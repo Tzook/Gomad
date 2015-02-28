@@ -12,9 +12,6 @@
 		var radius = 150,	// the distance of each image from center
 			imageSize = 50, // size of each image
 			rotateTime = 14; // time of each circle. only needed to change here.
-		// style is applied directly on the rotating games, in order to be able to change cycle time only here in the code
-		$scope.rotateStyle = {'-webkit-animation-duration': rotateTime + 's',
-									 'animation-duration': rotateTime + 's'};
 		$scope.games = []; // initialize games 
 
 		/* get games from a JSON file, and once it's up, start summoning the games */

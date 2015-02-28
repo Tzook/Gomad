@@ -11,7 +11,7 @@
 		$scope.phonePlay = false;
 		$scope.audio = new Audio('audio/hava.mp3');
 		$scope.audio.loop = true;	// play in loops
-		$scope.audio.play(); 		// play automatically
+		//$scope.audio.play(); 		// play automatically
 
 		/* mutes or un-mutes the audio */
 		$scope.toggleAudio = function() {

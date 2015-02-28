@@ -1,6 +1,8 @@
 @import "bootstrap/_bootstrap.scss";
 
 $circle-radius: 300px;
+$circle-time: 14s;
+$image-size: 50px;
 
 body {
 	//font-family: 'Open Sans', sans-serif;
@@ -35,15 +37,11 @@ body {
 }
 .rotate-right {
 	-webkit-animation: orbit 65s linear infinite;
-	-moz-animation: orbit 65s linear infinite;
-	-o-animation: orbit 65s linear infinite;
-	animation: orbit 65s linear infinite;
+			animation: orbit 65s linear infinite;
 }
 .rotate-left {
 	-webkit-animation: rev-orbit 30s linear infinite;
-	-moz-animation: rev-orbit 30s linear infinite;
-	-o-animation: rev-orbit 30s linear infinite;
-	animation: rev-orbit 30s linear infinite;
+			animation: rev-orbit 30s linear infinite;
 }
 h2 {
 	color: white;
@@ -72,11 +70,10 @@ h2 {
 }
 .rotate {
 	/* time will be overwritten by angular */
-	display: block;
 	width: 100%;
 	height: 100%;
-	-webkit-animation: orbit linear infinite;
-	animation: orbit linear infinite;
+	-webkit-animation: orbit $circle-time linear infinite;
+	animation: orbit $circle-time linear infinite;
 	&:hover {
 		-webkit-animation-play-state: paused !important; 
     			animation-play-state: paused !important; 
@@ -87,12 +84,12 @@ h2 {
 	}
 	a {
 		display: block;
-		width: 50px;
-		height: 50px;		
-		-webkit-animation: rev-orbit linear infinite;
-		animation: rev-orbit linear infinite;
+		-webkit-animation: rev-orbit $circle-time linear infinite;
+		animation: rev-orbit $circle-time linear infinite;
 	}
 	img {
+		width: $image-size;
+		height: $image-size;		
 		border-radius: 25px;
 		&:hover {
 			-webkit-transform: scale(1.2);
@@ -132,37 +129,37 @@ li {
 	position: absolute;
 	width: 100%;
 	bottom: 10px;
-	.footer {
-		width: 200px;
-		opacity: .8;
-		border-radius: 35px;
-		display: block;
-		margin: auto;
-		padding: 20px 0;
-	  	text-align: center;
-		li {
-			position: relative;
-			display: inline;
-			padding: 0 5px;
-			a {
-				text-decoration: none;
-				color: cyan;
-				letter-spacing: -0.3px;
-			}
+}
+.footer {
+	width: 200px;
+	opacity: .8;
+	border-radius: 35px;
+	display: block;
+	margin: auto;
+	padding: 20px 0;
+  	text-align: center;
+	li {
+		position: relative;
+		display: inline;
+		padding: 0 5px;
+		a {
+			text-decoration: none;
+			color: cyan;
+			letter-spacing: -0.3px;
 		}
-		.audio {
-			cursor: pointer;
-			.pause {
-				font-size: 20px;
-				position: absolute;
-				left: 11px;
-				top: -4px;
-				color: red;
-				font-weight: bold;
-			}
-			&.pause {
-				opacity: .5;
-			}
-		}
-	}	
+	}
+}	
+.audio {
+	cursor: pointer;
+	.pause {
+		font-size: 20px;
+		position: absolute;
+		left: 11px;
+		top: -4px;
+		color: red;
+		font-weight: bold;
+	}
+	&.pause {
+		opacity: .5;
+	}
 }
