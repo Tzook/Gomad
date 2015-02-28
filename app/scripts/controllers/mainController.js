@@ -8,7 +8,7 @@
 (function(angular){
 	'use strict';
 	angular.module('mainController', [])
-	.controller('MainController', ['$scope', '$timeout', '$interval', '$http', '$window', function ($scope, $timeout, $interval, $http, $window) {
+	.controller('MainController', ['$scope', '$timeout', '$http', function ($scope, $timeout, $http) {
 		var radius = 150,	// the distance of each image from center
 			imageSize = 50, // size of each image
 			rotateTime = 14; // time of each circle. only needed to change here.
