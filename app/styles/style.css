@@ -844,6 +844,9 @@ li {
       color: cyan;
       letter-spacing: -0.3px; }
 
+.tooltip {
+  width: 120px; }
+
 .audio {
   cursor: pointer; }
   .audio .pause {
